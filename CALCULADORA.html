@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>CALCULADORA IMC</h1>
+    </header>
+
+        <main>
+            <div>
+                <p>El peso ideal se refiere al peso corporal que una persona debería tener en relación con su altura y sexo, 
+                    siendo utilizado como referencia para evaluar el estado de salud. 
+
+El método más común para calcular el peso ideal es a través del Índice de Masa Corporal (IMC), 
+es decir, el Peso ideal= IMC (rango ideal superior e inferior) x Altura m2.
+
+No obstante, esta fórmula no toma en consideración la masa muscular, la masa ósea, 
+la contextura o si la persona sufre de alguna enfermedad. Por este motivo, 
+si tiene alguna preocupación sobre su peso debe acudir a un nutricionista para una evaluación..</p>
+
+      <hr />
+
+      <h2>Calculadora online de peso ideal</h2>
+
+       <p>Para saber su rango de peso ideal, introduzca los datos en la calculadora a continuación:</p>
+       
+      <form>
+        
+        <form onsubmit="event.preventDefault(); calcularIMC();">
+            <label for="Edad">Edad :</label><br>
+            <input type="number" id="Edad" name="Edad" required><br><br>
+    
+            <label for="altura">Altura (metros):</label><br>
+            <input type="number" id="altura" name="altura" step="0.01" required><br><br>
+    
+            <button type="submit">Calcular IMC</button>
+        </form>
+    
+        <p id="resultadoIMC"></p>
+
+    </form>
+        </main>
+    
+</body>
+</html>
